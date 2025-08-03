@@ -12,7 +12,7 @@ A simple web app that lets you upload an image and find matching anime scenes us
   
 ## Usage
 1. Clone or download this repository.
-2. run `npm install` in your terminal.
+2. Run `npm install` in your terminal.
 3. Start up the browser using Live Server.
 4. Select an image and submit the form.
 5. View the results below the form.
@@ -28,5 +28,6 @@ A simple web app that lets you upload an image and find matching anime scenes us
 
 ### Note:
 This is a simple project for learning and improving my JavaScript and api skills.
+
 
 
