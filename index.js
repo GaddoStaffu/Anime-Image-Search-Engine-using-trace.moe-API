@@ -1,7 +1,5 @@
 const API = "https://api.trace.moe/search";
 
-let animeResult = {};
-
 async function whatAnime(imageBlob) {
   try {
     const response = await axios.post(API, imageBlob, {
@@ -15,6 +13,7 @@ async function whatAnime(imageBlob) {
     console.log(error);
   }
 }
+
 function createList(animeResult) {
   // Get the results container (already in your HTML)
   let container = document.getElementById("results");
@@ -53,9 +52,7 @@ document.querySelector("form").addEventListener("submit", async function (e) {
   const file = fileInput.files[0];
   if (file) {
     const result = await whatAnime(file);
-    animeResult = result;
-    console.log(animeResult);
-    createList(animeResult);
+    createList(result);
   } else {
     alert("please select an image file");
   }
